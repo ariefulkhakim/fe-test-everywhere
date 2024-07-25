@@ -19,7 +19,7 @@ const PostItem = () => {
 
   return (
     <div className="container mx-auto mt-6">
-      <ul className="grid grid-cols-2 gap-6">
+      <ul className="grid lg:grid-cols-2 grid-cols-1 gap-6">
         {posts.map((post) => (
           <li
             key={post.id}
