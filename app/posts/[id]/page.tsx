@@ -27,7 +27,7 @@ const PostID = ({ params }: { params: { id: string } }) => {
     return <div>No post found</div>;
   }
   return (
-    <div className="container mx-auto mt-6">
+    <div className="container mx-auto mt-6 p-4 pt-0">
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
       <div className="flex items-center space-x-4 text-gray-600 mb-6">
         <div className="flex items-center gap-2">
@@ -54,7 +54,7 @@ const PostID = ({ params }: { params: { id: string } }) => {
         </div>
       </div>
       <p className="text-gray-800 mb-5 leading-8">{post.body}</p>
-      <div className="flex flex-wrap space-x-2">
+      <div className="flex flex-wrap gap-2">
         {post.tags.map((tag, index) => (
           <div
             key={index}
